@@ -7,4 +7,5 @@ ft/Flyable.java
 ft/Helicopter.java
 ft/JetPlane.java
 ft/Tower.java
+ft/WeatherProvider.java
 ft/WeatherTower.java
