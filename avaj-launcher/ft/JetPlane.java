@@ -1,9 +1,9 @@
 package ft;
 
-public class Baloon extends Aircraft implements Flyable {
+public class JetPlane extends Aircraft implements Flyable {
   private WeatherTower weatherTower;
 
-  public Baloon(String name, Coordinates coordinates) {
+  public JetPlane(String name, Coordinates coordinates) {
     super(name, coordinates);
   }
 
