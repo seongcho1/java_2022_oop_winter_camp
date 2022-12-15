@@ -1,9 +1,9 @@
 public class decoratorTest {
     public static void main(String[] args) {
-        
+
         Espresso coffee1 = new Americano("kenya");
         coffee1.print();
-        
+
         Espresso coffee2 = new LatteDecorator(coffee1);
         coffee2.print();
 
@@ -16,6 +16,5 @@ public class decoratorTest {
                                     new Americano("etiopia")
                             )));
         coffee4.print();
-
     }
 }
