@@ -1,5 +1,8 @@
 package kr.ftseoul.avaj.simulator;
 
+//System.out.println(WeatherType.valueOf("SUN").ordinal());
+//System.out.println(WeatherType.values()[1]);
+
 public enum WeatherType {
   SUN {
     @Override
@@ -7,16 +10,16 @@ public enum WeatherType {
       return "Sun";
     }
   },
-  RAIN {
-    @Override
-    public String toString() {
-      return "Rain";
-    }
-  },
   FOG {
     @Override
     public String toString() {
       return "Fog";
+    }
+  },
+  RAIN {
+    @Override
+    public String toString() {
+      return "Rain";
     }
   },
   SNOW {

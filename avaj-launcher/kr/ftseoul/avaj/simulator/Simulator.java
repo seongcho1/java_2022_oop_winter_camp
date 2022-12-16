@@ -13,5 +13,9 @@ public class Simulator {
     // System.out.println(provider2);
     // System.out.println(provider3);
 
+    //System.out.println(WeatherType.valueOf("SUN").ordinal());
+    //System.out.println(WeatherType.values()[1]);
+
+
   }
 }
