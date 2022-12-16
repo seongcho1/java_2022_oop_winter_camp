@@ -1,23 +1,65 @@
+//https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/
 package ft;
 
 public class WeatherProvider {
-  private WeatherProvider weatherProvider;
-  private String[] weather;
+  private static WeatherProvider weatherProvider;
+  //coordinates x num of simulation, 4 dimensions
+  private static String[] weather;
 
-  public WeatherProvider() {
+  private WeatherProvider() {
+    //private constructor
     weather = new String[3];
-    weather[0] = "Weather0";
-    weather[1] = "Weather1";
-    weather[2] = "Weather2";
+    weather[0] = "weather0";
+    weather[1] = "weather1";
+    weather[2] = "weather2";
   }
-  public WeatherProvider getProvider() {
+
+  //Lazy initialization method to return instance of class
+  public static WeatherProvider getProvider()
+  {
+    if (weatherProvider == null)
+    {
+      // if instance is null, initialize
+      weatherProvider = new WeatherProvider();
+    }
     return weatherProvider;
   }
+
   public String getCurrentWeather(Coordinates coordinates) {
     return "Weather";
   }
 
 }
+
+/*
+
+//Java Code to create singleton class
+// With Lazy initialization
+public class GFG
+{
+  // private instance, so that it can be
+  // accessed by only by getInstance() method
+  private static GFG instance;
+
+  private GFG()
+  {
+    // private constructor
+  }
+
+  //method to return instance of class
+  public static GFG getInstance()
+  {
+    if (instance == null)
+    {
+      // if instance is null, initialize
+      instance = new GFG();
+    }
+    return instance;
+  }
+}
+
+*/
+
 
 /*
 class Node
