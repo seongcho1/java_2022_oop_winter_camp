@@ -16,6 +16,5 @@ public abstract class Aircraft {
     return ++idCounter;
   }
 
-  public abstract String getFullname();
 
 }
