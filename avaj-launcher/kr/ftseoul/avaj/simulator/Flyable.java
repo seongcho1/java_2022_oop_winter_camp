@@ -1,4 +1,4 @@
-package ft;
+package kr.ftseoul.avaj.simulator;
 
 public interface Flyable {
   public void updateConditions();

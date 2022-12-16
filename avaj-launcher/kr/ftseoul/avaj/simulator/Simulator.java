@@ -1,4 +1,4 @@
-package ft;
+package kr.ftseoul.avaj.simulator;
 
 public class Simulator {
   public static void main(String[] args) {

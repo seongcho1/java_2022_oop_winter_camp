@@ -1,5 +1,5 @@
 //https://www.geeksforgeeks.org/java-singleton-design-pattern-practices-examples/
-package ft;
+package kr.ftseoul.avaj.simulator;
 
 public class WeatherProvider {
   private static WeatherProvider weatherProvider;

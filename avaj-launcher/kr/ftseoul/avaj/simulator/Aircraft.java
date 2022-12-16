@@ -1,4 +1,4 @@
-package ft;
+package kr.ftseoul.avaj.simulator;
 
 public class Aircraft {
   protected long id;

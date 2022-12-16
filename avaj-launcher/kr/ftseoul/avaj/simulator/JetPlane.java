@@ -1,4 +1,4 @@
-package ft;
+package kr.ftseoul.avaj.simulator;
 
 public class JetPlane extends Aircraft implements Flyable {
   private WeatherTower weatherTower;

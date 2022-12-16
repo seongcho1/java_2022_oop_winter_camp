@@ -1,4 +1,4 @@
-package ft;
+package kr.ftseoul.avaj.simulator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
