@@ -29,7 +29,8 @@ public class WeatherProvider {
   public String getCurrentWeather(Coordinates coordinates) {
     //coordinates' getCurrentWeather of the tick
     //if (tickTimer == 0)
-      return "Sun";
+    //return "Sun";
+    return "Snow";
   }
 
   public void tick() {
