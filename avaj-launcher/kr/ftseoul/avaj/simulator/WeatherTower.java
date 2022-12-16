@@ -9,13 +9,20 @@ public class WeatherTower extends Tower {
     weatherProvider = WeatherProvider.getProvider();
   }
 
+  protected void tick() {
+    changeWeather();
+    conditionsChanged();
+  }
+
 
   public String getWeather(Coordinates coordinates) {
     String weatherString = weatherProvider.getCurrentWeather(coordinates);
     System.out.println(weatherString);
     return weatherString;
   }
-  private void changeWeather() {
 
+  private void changeWeather() {
+    weatherProvider.tick();
   }
+
 }

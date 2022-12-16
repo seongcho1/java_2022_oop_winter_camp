@@ -2,6 +2,7 @@
 package kr.ftseoul.avaj.simulator;
 
 public class WeatherProvider {
+  private static long tickTimer = 0;
   private static WeatherProvider weatherProvider;
   //coordinates x num of simulation, 4 dimensions
   private static String[] weather;
@@ -26,7 +27,12 @@ public class WeatherProvider {
   }
 
   public String getCurrentWeather(Coordinates coordinates) {
+    //coordinates' getCurrentWeather of the tick
     return "Weather";
+  }
+
+  public void tick() {
+    ++tickTimer;
   }
 
 }
