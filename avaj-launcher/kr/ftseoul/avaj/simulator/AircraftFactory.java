@@ -5,9 +5,9 @@ public class AircraftFactory {
     Coordinates coordinates = new Coordinates(longitude, latitude, height);
 
     if (type.equalsIgnoreCase(AircraftType.HELICOPTER.toString()))
-      return new Baloon(name, coordinates);
+      return new Helicopter(name, coordinates);
     else if (type.equalsIgnoreCase(AircraftType.JETPLANE.toString()))
-      return new Baloon(name, coordinates);
+      return new JetPlane(name, coordinates);
     else if (type.equalsIgnoreCase(AircraftType.BALOON.toString()))
       return new Baloon(name, coordinates);
     else

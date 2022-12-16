@@ -22,7 +22,7 @@ public class Tower {
     Iterator<Flyable> iter = observers.iterator();
     while (iter.hasNext()) {
       Flyable flyable = iter.next();
-      System.out.println(flyable + " updateConditions");
+      //System.out.println(flyable + " updateConditions");
       flyable.updateConditions();
     }
   }

@@ -2,7 +2,7 @@
 package kr.ftseoul.avaj.simulator;
 
 public class WeatherProvider {
-  private static long tickTimer = 0;
+  private static long tickTimer;
   private static WeatherProvider weatherProvider;
   //coordinates x num of simulation, 4 dimensions
   private static String[] weather;
@@ -18,21 +18,22 @@ public class WeatherProvider {
   //Lazy initialization method to return instance of class
   public static WeatherProvider getProvider()
   {
-    if (weatherProvider == null)
-    {
+    if (weatherProvider == null) {
       // if instance is null, initialize
       weatherProvider = new WeatherProvider();
+      tickTimer = 0;
     }
     return weatherProvider;
   }
 
   public String getCurrentWeather(Coordinates coordinates) {
     //coordinates' getCurrentWeather of the tick
-    return "Weather";
+    //if (tickTimer == 0)
+      return "Sun";
   }
 
   public void tick() {
-    ++tickTimer;
+    tickTimer++;
   }
 
 }

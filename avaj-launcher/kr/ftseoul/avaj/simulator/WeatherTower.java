@@ -9,6 +9,10 @@ public class WeatherTower extends Tower {
     weatherProvider = WeatherProvider.getProvider();
   }
 
+  public void register(Flyable flyable) {
+    System.out.println("Tower says: " + flyable.getFullname() + " registered to weather tower.");
+    super.register(flyable);
+  }
   public void unregister(Flyable flyable) {
     //Baloon#B1(1) landing.
     //Tower says: Baloon#B1(1) unregistered from weather tower.
@@ -25,7 +29,7 @@ public class WeatherTower extends Tower {
 
   public String getWeather(Coordinates coordinates) {
     String weatherString = weatherProvider.getCurrentWeather(coordinates);
-    System.out.println(weatherString);
+    //System.out.println(weatherString);
     return weatherString;
   }
 
