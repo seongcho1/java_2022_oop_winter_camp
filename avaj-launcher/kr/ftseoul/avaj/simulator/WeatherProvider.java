@@ -34,7 +34,7 @@ public class WeatherProvider {
   }
 
   public void tick() {
-    tickTimer++;
+    tickTimer = tickTimer + 1;
   }
 
 }
