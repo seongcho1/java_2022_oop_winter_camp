@@ -5,3 +5,4 @@ public class IncorrectAircraftTypeException extends RuntimeException {
       super(errorMessage);
   }
 }
+

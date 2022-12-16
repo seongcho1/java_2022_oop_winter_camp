@@ -4,6 +4,7 @@ public class Simulator {
   public static void main(String[] args) {
     try {
       doSimulationWithoutFile();
+
     } catch(Exception ex) {
       System.out.println("Exception occured: " + ex);
     }
