@@ -26,4 +26,7 @@ public class Tower {
       flyable.updateConditions();
     }
   }
+  protected int getIndex(Flyable flyable ) {
+    return observers.indexOf(flyable);
+  }
 }

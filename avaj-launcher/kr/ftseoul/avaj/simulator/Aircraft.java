@@ -1,6 +1,6 @@
 package kr.ftseoul.avaj.simulator;
 
-public class Aircraft {
+public abstract class Aircraft {
   protected long id;
   protected String name;
   protected Coordinates coordinates;
@@ -15,4 +15,7 @@ public class Aircraft {
   private long nextId() {
     return ++idCounter;
   }
+
+  public abstract String getFullname();
+
 }
