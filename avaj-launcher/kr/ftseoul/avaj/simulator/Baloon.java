@@ -51,6 +51,6 @@ public class Baloon extends Aircraft implements Flyable {
 
   public String getFullname() {
     //Baloon#B1(1)
-    return "Baloon#" + name + "(" + weatherTower.getIndex(this) + ")";
+    return "Baloon#" + name + "(" + id + ")";
   }
 }

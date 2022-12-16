@@ -47,6 +47,6 @@ public class Helicopter extends Aircraft implements Flyable {
   }
   public String getFullname() {
     //Helicopter#H1(3)
-    return "Helicopter#" + name + "(" + weatherTower.getIndex(this) + ")";
+    return "Helicopter#" + name + "(" + id + ")";
   }
 }

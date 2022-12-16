@@ -47,6 +47,6 @@ public class JetPlane extends Aircraft implements Flyable {
   }
   public String getFullname() {
     //JetPlane#J1(2)
-    return "JetPlane#" + name + "(" + weatherTower.getIndex(this) + ")";
+    return "JetPlane#" + name + "(" + id + ")";
   }
 }
