@@ -5,12 +5,13 @@ public class Simulator {
     Tower tower = new WeatherTower();
     System.out.println(tower);
 
-    WeatherProvider provider1 = WeatherProvider.getProvider();
-    WeatherProvider provider2 = WeatherProvider.getProvider();
-    WeatherProvider provider3 = WeatherProvider.getProvider();
-    System.out.println(provider1);
-    System.out.println(provider2);
-    System.out.println(provider3);
+    WeatherProvider weatherProvider = WeatherProvider.getProvider();
+    System.out.println(weatherProvider);
+
+    // WeatherProvider provider2 = WeatherProvider.getProvider();
+    // WeatherProvider provider3 = WeatherProvider.getProvider();
+    // System.out.println(provider2);
+    // System.out.println(provider3);
 
   }
 }

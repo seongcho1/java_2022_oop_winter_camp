@@ -12,7 +12,7 @@ public class Aircraft {
     this.coordinates = coordinates;
   }
 
-  public static long nextId() {
+  private long nextId() {
     return ++idCounter;
   }
 }
