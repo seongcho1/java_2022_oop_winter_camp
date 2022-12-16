@@ -20,11 +20,10 @@ public class Tower {
   protected void conditionsChanged() {
 
     Iterator<Flyable> iter = observers.iterator();
-      while (iter.hasNext()) {
-        Flyable flyable = iter.next();
-        System.out.println(flyable + " updateConditions");
-        flyable.updateConditions();
-      }
-
+    while (iter.hasNext()) {
+      Flyable flyable = iter.next();
+      System.out.println(flyable + " updateConditions");
+      flyable.updateConditions();
+    }
   }
 }
