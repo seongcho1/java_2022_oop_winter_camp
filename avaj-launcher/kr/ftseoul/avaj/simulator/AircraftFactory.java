@@ -17,7 +17,6 @@ public class AircraftFactory {
     else if (type.equalsIgnoreCase(AircraftType.BALOON.toString()))
       return new Baloon(name, coordinates);
     else
-      return null;
-
+      throw new IncorrectAircraftTypeException(type + " " + name);
   }
 }

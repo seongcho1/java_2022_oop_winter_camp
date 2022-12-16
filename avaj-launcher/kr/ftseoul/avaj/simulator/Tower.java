@@ -9,7 +9,7 @@ public class Tower {
   private ArrayList<Flyable> observers;
   private ArrayList<Flyable> removeList;
   public Tower() {
-    System.out.println("Tower constructor");
+    //System.out.println("Tower constructor");
     observers = new ArrayList<Flyable>();
     removeList = new ArrayList<Flyable>();
   }

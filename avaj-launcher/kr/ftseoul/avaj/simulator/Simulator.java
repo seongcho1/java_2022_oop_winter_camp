@@ -2,9 +2,11 @@ package kr.ftseoul.avaj.simulator;
 
 public class Simulator {
   public static void main(String[] args) {
-
-    doSimulationWithoutFile();
-
+    try {
+      doSimulationWithoutFile();
+    } catch(Exception ex) {
+      System.out.println("Exception occured: " + ex);
+    }
   }
 
   public static void doSimulationWithoutFile() {
