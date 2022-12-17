@@ -1,4 +1,3 @@
-
 public class Americano extends Espresso {
 
     public static final String KENYA = "Kenya";
