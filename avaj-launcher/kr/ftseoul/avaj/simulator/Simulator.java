@@ -19,7 +19,8 @@ public class Simulator {
       // using setOut() method
       System.setOut(o);
 
-      doSimulationWithoutFile();
+      doSimulationWithFile(args);
+      //doSimulationWithoutFile();
 
       // Use stored value for output stream
       System.setOut(console);
@@ -78,6 +79,19 @@ public class Simulator {
     //System.out.println(WeatherType.values()[1]);
 
   }
+
+  public static void doSimulationWithFile(String[] args) {
+
+    File inFile = null;
+    if (0 < args.length) {
+      inFile = new File(args[0]);
+      // Make sure the file exists, can read, etc...
+
+    } else {
+      System.err.println("Invalid arguments count: " + args.length);
+    }
+  }
+
 
 
 }
