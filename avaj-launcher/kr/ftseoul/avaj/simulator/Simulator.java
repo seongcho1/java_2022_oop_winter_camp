@@ -38,7 +38,7 @@ public class Simulator {
     Flyable b3 = factory.newAircraft("Baloon", "B3", 102, 22, 34);
     b3.registerTower(weatherTower);
 
-    Flyable j2 = factory.newAircraft("JetPlane", "J2", 11, 99, 768);
+    Flyable j2 = factory.newAircraft("JetPlane", "J2", 11, 99, 100);//768);
     j2.registerTower(weatherTower);
 
     Helicopter h4 = new Helicopter("H4", new Coordinates(223, 23, 54));

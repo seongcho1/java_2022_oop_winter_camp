@@ -1,6 +1,8 @@
 package kr.ftseoul.avaj.simulator;
 
 public class Coordinates {
+  public static final int MIN_LONGITUDE = 0;
+  public static final int MIN_LATITUDE = 0;
   public static final int MIN_HEIGHT = 0;
   public static final int MAX_HEIGHT = 100;
 
@@ -27,10 +29,16 @@ public class Coordinates {
   }
 
   public void setLongitude(int longitude) {
+    if (longitude < MIN_LONGITUDE) {
+      longitude = MIN_LATITUDE;
+    }
     this.longitude = longitude;
   }
 
   public void setLatitude(int latitude) {
+    if (latitude < MIN_LATITUDE) {
+      latitude = MIN_LATITUDE;
+    }
     this.latitude = latitude;
   }
 

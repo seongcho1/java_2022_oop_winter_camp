@@ -16,6 +16,10 @@ public class WeatherProvider {
     // weather[0] = "weather0";
     // weather[1] = "weather1";
     // weather[2] = "weather2";
+
+    if (Simulator.numOfSimulations < 1)
+      throw new IncorrectNumberException("numOfSimulations=" + Simulator.numOfSimulations);
+
     createWeather(Simulator.numOfSimulations);
   }
 
