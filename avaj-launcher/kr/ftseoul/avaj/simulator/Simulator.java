@@ -1,10 +1,28 @@
 package kr.ftseoul.avaj.simulator;
 
+import java.io.*;
+
 public class Simulator {
   public static int numOfSimulations;
-  public static void main(String[] args) {
+  public static void main(String[] args) throws FileNotFoundException {
     try {
+
+      // Creating a File object that
+      // represents the disk file
+      PrintStream o = new PrintStream(new File("simulation.txt"));
+
+      // Store current System.out
+      // before assigning a new value
+      PrintStream console = System.out;
+
+      // Assign o to output stream
+      // using setOut() method
+      System.setOut(o);
+
       doSimulationWithoutFile();
+
+      // Use stored value for output stream
+      System.setOut(console);
 
     } catch(Exception ex) {
       System.out.println("Exception occured: " + ex);
@@ -60,4 +78,6 @@ public class Simulator {
     //System.out.println(WeatherType.values()[1]);
 
   }
+
+
 }
