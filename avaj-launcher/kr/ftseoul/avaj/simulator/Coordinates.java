@@ -43,4 +43,8 @@ public class Coordinates {
     this.height = height;
   }
 
+  public String toString() {
+    return "(" + String.valueOf(longitude) + ", " + String.valueOf(latitude) + ", " + String.valueOf(height) + ")";
+  }
+
 }
