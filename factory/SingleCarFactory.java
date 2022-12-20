@@ -13,5 +13,5 @@ public abstract class SingleCarFactory {
     }
 
     //factoryMethod()
-    public abstract Car produceCar();
+    protected abstract Car produceCar();
 }
