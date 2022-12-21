@@ -1,5 +1,7 @@
 package week02.state;
 
+import javax.lang.model.util.ElementScanner6;
+
 public class Player {
 
   public static final int BEGINNER_LEVEL = 1;
@@ -16,7 +18,26 @@ public class Player {
     return level;
   }
 
-  public void play(int time) {
-    level.go(time);
+  public void upgradeLevel(int lv) {
+
+    switch(lv) {
+      case 2: level = new AdvancedLevel(this);
+              break;
+      case 3: level = new SuperLevel(this);
+              break;
+      default: throw new IncorrectLevelException("level=" + lv);
+    }
+
+  }
+
+  public void play() {
+
+    int times = 0;
+
+    if (level.toString().equalsIgnoreCase(LevelType.BEGINNER.toString())) times = BEGINNER_LEVEL;
+    else if (level.toString().equalsIgnoreCase(LevelType.ADVANCED.toString())) times = ADVANCED_LEVEL;
+    else if (level.toString().equalsIgnoreCase(LevelType.SUPER.toString())) times = SUPER_LEVEL;
+    else throw new IncorrectLevelException("times=" + times);
+    level.go(times);
   }
 }

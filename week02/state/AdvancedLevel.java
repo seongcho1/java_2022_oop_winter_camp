@@ -1,19 +1,19 @@
 package week02.state;
 
-public class BiginnerLevel extends PlayerLevel {
+public class AdvancedLevel extends PlayerLevel {
 
-  public BiginnerLevel(Player player) {
+  public AdvancedLevel(Player player) {
     super(player);
   }
 
   @Override
   public void run() {
-    System.out.println("천천히 달립니다.");
+    System.out.println("빨리 달립니다.");
   }
 
   @Override
   public void jump() {
-    System.out.println("Jump 할 줄 모르지롱.");
+    System.out.println("높이 Jump 합니다.");
   }
 
   @Override
@@ -23,11 +23,11 @@ public class BiginnerLevel extends PlayerLevel {
 
   @Override
   public void showLevelMessage() {
-    System.out.println(LevelType.BEGINNER + " 입니다.");
+    System.out.println(LevelType.ADVANCED + " 입니다.");
   }
 
   @Override
   public String toString() {
-    return LevelType.BEGINNER.toString();
+    return LevelType.ADVANCED.toString();
   }
 }
