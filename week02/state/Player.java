@@ -1,7 +1,4 @@
 package week02.state;
-
-import javax.lang.model.util.ElementScanner6;
-
 public class Player {
 
   public static final int BEGINNER_LEVEL = 1;
@@ -27,7 +24,6 @@ public class Player {
               break;
       default: throw new IncorrectLevelException("level=" + lv);
     }
-
   }
 
   public void play() {
