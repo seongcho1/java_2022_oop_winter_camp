@@ -13,4 +13,10 @@ public enum DaoType {
       return "MYSQL";
     }
   },
+  MSSQL {
+    @Override
+    public String toString() {
+      return "MSSQL";
+    }
+  },
 }

@@ -1,5 +1,7 @@
 package week02.strategy2.domain.userinfo;
 
+import week02.strategy2.domain.userinfo.exception.IncorrectIdException;
+
 public class UserInfo {
   private String userId;
   private String passwd;
@@ -9,7 +11,12 @@ public class UserInfo {
       return userId;
   }
   public void setUserId(String userId) {
-        this.userId = userId;
+    try {
+      int id = Integer.parseInt(userId);
+    } catch(NumberFormatException e){
+      throw new IncorrectIdException("userId=" + userId);
+    }
+    this.userId = userId;
   }
   public String getPasswd() {
         return passwd;

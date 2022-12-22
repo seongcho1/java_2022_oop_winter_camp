@@ -8,7 +8,9 @@ import week02.strategy2.domain.userinfo.UserInfo;
 import week02.strategy2.domain.userinfo.dao.DaoType;
 import week02.strategy2.domain.userinfo.dao.UserInfoDao;
 import week02.strategy2.domain.userinfo.dao.mysql.UserInfoMySqlDao;
+import week02.strategy2.domain.userinfo.dao.mssql.UserInfoMsSqlDao;
 import week02.strategy2.domain.userinfo.dao.oracle.UserInfoOracleDao;
+import week02.strategy2.domain.userinfo.exception.IncorrectFileInfoException;
 
 public class UserInfoClient {
   public static void main(String[] args) {
@@ -45,6 +47,8 @@ public class UserInfoClient {
 
       if (dbType.equalsIgnoreCase(DaoType.MYSQL.toString())) {
         dao = new UserInfoMySqlDao();
+      } else if (dbType.equalsIgnoreCase(DaoType.MSSQL.toString())) {
+        dao = new UserInfoMsSqlDao();
       } else if (dbType.equalsIgnoreCase(DaoType.ORACLE.toString())) {
         dao = new UserInfoOracleDao();
       } else throw new IncorrectFileInfoException("dbType=" + dbType);
@@ -59,10 +63,6 @@ public class UserInfoClient {
 
       dao.delete(userinfo);
       userinfo = null;
-
-
-
-
 
     } catch (FileNotFoundException e) {
       System.err.println("Exception occured: " + e);
