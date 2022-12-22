@@ -14,29 +14,31 @@ public class IteratorTest {
         Book book = (Book)it.next();
         System.out.println("" + book.getName());
       }
-      System.out.println();
+      System.out.println("==========");
 
-      Iterator rit = bookShelf.reverseIterator();
+      //Iterator rit = bookShelf.reverseIterator();
+      ReverseIterator rit = bookShelf.reverseIterator();
       while (rit.hasNext()) {
         Book book = (Book)rit.next();
         System.out.println("" + book.getName());
       }
-      System.out.println();
+      System.out.println("==========");
 
       BookShelfIteratorFactory bsitFactory = new BookShelfIteratorFactory();
 
-      Iterator it2 = bsitFactory.createProduct(bookShelf, 1);
+      Iterator it2 = bsitFactory.createProduct(bookShelf, IteratorType.FORWARD.getValue());
       while (it2.hasNext()) {
         Book book = (Book)it2.next();
         System.out.println("" + book.getName());
       }
-      System.out.println();
-      Iterator rit2 = bsitFactory.createProduct(bookShelf, -1);
+      System.out.println("==========");
+
+      Iterator rit2 = bsitFactory.createProduct(bookShelf, IteratorType.REVERSE.getValue());
       while (rit2.hasNext()) {
         Book book = (Book)rit2.next();
         System.out.println("" + book.getName());
       }
-      System.out.println();
+      System.out.println("==========");
 
 
     } catch(Exception e) {

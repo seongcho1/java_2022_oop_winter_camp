@@ -29,7 +29,7 @@ public class BookShelf implements Aggregate{
   }
 
   @Override
-  public Iterator reverseIterator() {
+  public ReverseIterator reverseIterator() {
     return new BookShelfReverseIterator(this);
   }
 

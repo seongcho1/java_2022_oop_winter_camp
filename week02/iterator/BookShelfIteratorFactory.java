@@ -11,8 +11,11 @@ public class BookShelfIteratorFactory extends Factory {
       bookShelf = (BookShelf)list;
     } else throw new IncorrectBookShelfTypeException("list=" + list.toString());
 
-    if (type == 1) return new BookShelfIterator(bookShelf);
-    else if (type == -1) return new BookShelfReverseIterator(bookShelf);
-    else throw new IncorrectIteratorTypeException("type=" + type);
+    if (type == IteratorType.FORWARD.getValue())
+      return new BookShelfIterator(bookShelf);
+    else if (type == IteratorType.REVERSE.getValue())
+      return new BookShelfReverseIterator(bookShelf);
+    else
+      throw new IncorrectIteratorTypeException("type=" + type);
   }
 }

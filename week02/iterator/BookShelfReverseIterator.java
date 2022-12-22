@@ -1,6 +1,6 @@
 package week02.iterator;
 
-public class BookShelfReverseIterator implements Iterator {
+public class BookShelfReverseIterator implements ReverseIterator {
   private BookShelf bookShelf;
   private int index;
 
