@@ -1,0 +1,3 @@
+domain/userinfo/dao/UserInfoDao.java
+domain/userinfo/UserInfo.java
+userinfo/web/UserInfoClient.java
