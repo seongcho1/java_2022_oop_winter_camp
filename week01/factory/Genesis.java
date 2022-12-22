@@ -1,6 +1,6 @@
 public class Genesis extends Car {
-    public Genesis() {
+  protected Genesis() {
         productName = GENESIS;
     }
-    
+
 }
