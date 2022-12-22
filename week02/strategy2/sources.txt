@@ -1,3 +1,7 @@
+domain/userinfo/dao/oracle/UserInfoOracleDao.java
 domain/userinfo/dao/UserInfoDao.java
+domain/userinfo/dao/mysql/UserInfoMySqlDao.java
+domain/userinfo/dao/DaoType.java
 domain/userinfo/UserInfo.java
+userinfo/web/IncorrectFileInfoException.java
 userinfo/web/UserInfoClient.java
