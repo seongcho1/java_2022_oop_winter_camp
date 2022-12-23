@@ -7,9 +7,6 @@ https://www.oracle.com/java/technologies/downloads/#java8
 
 https://www.eclipse.org/downloads/
 
-https://refactoring.guru/design-patterns/java
-
-
 
 # docs
 https://www.inflearn.com/course/자바-프로그래밍-입문
