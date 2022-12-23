@@ -1,15 +1,16 @@
+package userinfo.web;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import week02.strategy2.domain.userinfo.UserInfo;
-import week02.strategy2.domain.userinfo.dao.DaoType;
-import week02.strategy2.domain.userinfo.dao.UserInfoDao;
-import week02.strategy2.domain.userinfo.dao.mysql.UserInfoMySqlDao;
-import week02.strategy2.domain.userinfo.dao.mssql.UserInfoMsSqlDao;
-import week02.strategy2.domain.userinfo.dao.oracle.UserInfoOracleDao;
-import week02.strategy2.domain.userinfo.exception.IncorrectFileInfoException;
+import domain.userinfo.UserInfo;
+import domain.userinfo.dao.DaoType;
+import domain.userinfo.dao.UserInfoDao;
+import domain.userinfo.dao.mysql.UserInfoMySqlDao;
+import domain.userinfo.dao.mssql.UserInfoMsSqlDao;
+import domain.userinfo.dao.oracle.UserInfoOracleDao;
+import domain.userinfo.exception.IncorrectFileInfoException;
 
 public class UserInfoClient {
   public static void main(String[] args) {

@@ -1,0 +1,9 @@
+domain/userinfo/dao/oracle/UserInfoOracleDao.java
+domain/userinfo/dao/UserInfoDao.java
+domain/userinfo/dao/mysql/UserInfoMySqlDao.java
+domain/userinfo/dao/DaoType.java
+domain/userinfo/dao/mssql/UserInfoMsSqlDao.java
+domain/userinfo/UserInfo.java
+domain/userinfo/exception/IncorrectFileInfoException.java
+domain/userinfo/exception/IncorrectIdException.java
+userinfo/web/UserInfoClient.java
