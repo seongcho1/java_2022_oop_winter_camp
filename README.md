@@ -15,7 +15,7 @@ https://refactoring.guru/design-patterns
 
 https://refactoring.guru/ko/design-patterns
 
-GIYF google.com
+GIYF https://google.com
 
 
 # online java compiler
