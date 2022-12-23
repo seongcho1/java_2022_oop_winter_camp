@@ -9,8 +9,11 @@ https://refactoring.guru/design-patterns/java
 
 
 
-# Do it! 자바 프로그래밍 입문 with 은종쌤 현대 진도 
-https://www.inflearn.com/course/자바-프로그래밍-입문/unit/18029
+# docs
+https://www.inflearn.com/course/자바-프로그래밍-입문
+https://refactoring.guru/design-patterns
+https://refactoring.guru/ko/design-patterns
+
 
 # online java compiler
 
