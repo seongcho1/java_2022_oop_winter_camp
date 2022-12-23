@@ -19,3 +19,19 @@ https://refactoring.guru/ko/design-patterns
 # online java compiler
 
 https://www.jdoodle.com/online-java-compiler-ide/
+
+
+# weeks
+
+
+## week01
+
+- [x] Factory Method
+- [x] Singleton
+- [x] Decorator
+
+## week02
+
+- [x] State
+- [x] Strategy
+- [x] Iterator
