@@ -32,6 +32,6 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 ## week02
 
-- [x] State
-- [x] Strategy
-- [x] Iterator
+- [ ] State
+- [ ] Strategy
+- [ ] Iterator
