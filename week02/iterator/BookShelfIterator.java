@@ -15,9 +15,25 @@ public class BookShelfIterator implements Iterator {
   }
 
   @Override
+  public boolean isDone() {
+      return !hasNext();
+  }
+
+  @Override
   public Object next() {
     index++;
     return bookShelf.getBook(index);
   }
 
+  @Override
+  public Object first() {
+    return bookShelf.getBook(0);
+  }
+
+  @Override
+  public Object currentItem() {
+    if (index < 0 || index >= bookShelf.getLength())
+      throw new IncorrectIteratorIndexException("index=" + index);
+    return bookShelf.getBook(index);
+  }
 }
