@@ -33,6 +33,13 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 ## week02
 
-- [ ] State
-- [ ] Strategy
-- [ ] Iterator
+- [x] State
+- [x] Strategy
+- [x] Iterator
+
+## week03
+
+- [ ] Abstract class and Template method
+- [ ] Observer
+- [ ] Bridge
+
