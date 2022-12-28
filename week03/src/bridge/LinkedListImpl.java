@@ -1,40 +1,39 @@
 package bridge;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
-public class ArrayImpl<T> implements AbstractList<T> {
-  private ArrayList<T> arr;
+public class LinkedListImpl<T> implements AbstractList<T> {
+  private LinkedList<T> list;
 
-  public ArrayImpl() {
-    arr = new ArrayList<T>();
+  public LinkedListImpl() {
+    list = new LinkedList<T>();
   }
 
   @Override
   public void addElement(T obj) {
-    arr.add(obj);
+    list.add(obj);
   }
 
   @Override
   public T deleteElement(int i) {
-    T element = arr.get(i);
-    arr.remove(i);
+    T element = list.get(i);
+    list.remove(i);
     return element;
   }
 
   @Override
   public T getElement(int i) {
-    return arr.get(i);
+    return list.get(i);
   }
 
   @Override
   public int getElementSize() {
-    return arr.size();
+    return list.size();
   }
 
   @Override
   public int insertElement(T obj, int i) {
-    arr.add(i, obj);
+    list.add(i, obj);
     return 0;
   }
-
 }
