@@ -1,4 +1,4 @@
-package car;
+package template;
 
 public abstract class Car {
   //This method is handled by this class
