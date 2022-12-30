@@ -39,7 +39,10 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 ## week03
 
-- [ ] Abstract class and Template method
-- [ ] Observer
-- [ ] Bridge
+- [x] Abstract class and Template method
+- [x] Observer
+- [x] Bridge
 
+## week04
+
+- [ ] xxx 
