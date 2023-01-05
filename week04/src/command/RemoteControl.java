@@ -1,6 +1,7 @@
 package command;
 
 import java.util.HashMap;
+//import javafx.util.Pair
 
 public class RemoteControl {
 
