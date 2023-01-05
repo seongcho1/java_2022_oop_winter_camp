@@ -45,4 +45,7 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 ## week04
 
-- [ ] xxx 
+- [ ] Abstract Factory
+- [ ] Composite
+- [ ] Command
+
