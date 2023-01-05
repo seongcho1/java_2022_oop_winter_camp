@@ -1,11 +1,10 @@
 package command;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RemoteControl {
 
-  private HashMap<Integer, ArrayList<Command>> commands;
+  private HashMap<Integer,Command[]> commands;
 
   public RemoteControl() {
     commands = new HashMap<>();
@@ -17,9 +16,9 @@ public class RemoteControl {
       return;
     }
 
-    ArrayList<Command> pair;
+    Command[] pair = new Command[2];
     pair = commands.get(i);
-    pair.get(0).execute();
+    pair[0].execute();
   }
 
   public void offButtonWasPushed(int i) {
@@ -28,15 +27,15 @@ public class RemoteControl {
       return;
     }
 
-    ArrayList<Command> pair;
+    Command[] pair = new Command[2];
     pair = commands.get(i);
-    pair.get(1).execute();
+    pair[1].execute();
   }
 
   public void setCommand(int i, Command onCommand, Command offCommand) {
-    ArrayList<Command> pair = new ArrayList<>();
-    pair.add(onCommand);
-    pair.add(offCommand);
+    Command[] pair = new Command[2];
+    pair[0] = (onCommand);
+    pair[1] = (offCommand);
     commands.put(i, pair);
   }
 

@@ -55,8 +55,5 @@ public class RemoteLoader {
     System.out.println("-".repeat(42));
     remoteControl.offButtonWasPushed(4);
 
-
-
-
   }
 }
