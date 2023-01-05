@@ -36,5 +36,27 @@ public class RemoteLoader {
     remoteControl.onButtonWasPushed(4);
     remoteControl.offButtonWasPushed(4);
 
+    System.out.println("=".repeat(42));
+
+    CommandGroup onGroup = new CommandGroup();
+    onGroup.add(livingRoomLightOn);
+    onGroup.add(ceilingFanOn);
+    onGroup.add(stereoOnWithCD);
+    onGroup.add(garageDoorUp);
+
+    CommandGroup offGroup = new CommandGroup();
+    offGroup.add(livingRoomLightOff);
+    offGroup.add(ceilingFanOff);
+    offGroup.add(stereoOff);
+    offGroup.add(garageDoorDown);
+
+    remoteControl.setCommand(4, onGroup, offGroup);
+    remoteControl.onButtonWasPushed(4);
+    System.out.println("-".repeat(42));
+    remoteControl.offButtonWasPushed(4);
+
+
+
+
   }
 }
