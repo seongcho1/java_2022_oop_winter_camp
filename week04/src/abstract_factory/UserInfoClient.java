@@ -45,8 +45,6 @@ public class UserInfoClient {
     productDao.insertProduct(product);
     productDao.updateProduct(product);
     productDao.deleteProduct(product);
-
-
   }
 
 
