@@ -1,11 +1,13 @@
 package abstract_factory;
 
-public class MySqlDaoFactory extends DaoFactory{
+public class OracleDaoFactory extends DaoFactory{
   @Override
   public UserInfoDao createUserInfoDao() {
-  return new UserInfoMySqlDao(); }
+    return new UserInfoOracleDao();
+  }
+
   @Override
   public ProductDao createProductDao() {
-  return new ProductMySqlDao(); }
+    return new ProductOracleDao();
   }
 }
