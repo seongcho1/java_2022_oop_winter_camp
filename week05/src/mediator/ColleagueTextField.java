@@ -20,6 +20,7 @@ public class ColleagueTextField extends TextField implements TextListener, Colle
   public void textValueChanged(TextEvent e) {
     System.out.println("" + e);
     //System.exit(0);
+    mediator.colleagueChanged(this);
 
   }
 }

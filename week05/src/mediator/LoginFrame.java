@@ -31,8 +31,10 @@ public class LoginFrame extends Frame implements ActionListener,  Mediator{
     // 배치
     add(checkGuest);
     add(checkLogin);
-    add(new Label("Username:")); add(textUser);
-    add(new Label("Password:")); add(textPass);
+    add(new Label("Username:"));
+    add(textUser);
+    add(new Label("Password:"));
+    add(textPass);
     add(buttonOk);
     add(buttonCancel);
     // 유효/무효의 초기지정
