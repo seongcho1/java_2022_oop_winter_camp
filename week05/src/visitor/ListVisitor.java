@@ -1,17 +1,28 @@
 package visitor;
 
-//https://github.com/a-know/DesignPatternForJava/blob/master/src/visitor/ListVisitor.java
+import java.util.Iterator;
+
 public class ListVisitor extends Visitor {
+  private String currentDir = "";
 
   @Override
   public void visit(File file) {
-    System.out.println()
-
+    System.out.println(currentDir + "/" + file);
   }
 
   @Override
   public void visit(Directory directory) {
-    // TODO Auto-generated method stub
+
+    System.out.println(currentDir + "/" + directory);
+
+    String dirBackup = currentDir;
+    currentDir = currentDir + "/" + directory.getName();
+		Iterator it = directory.iterator();
+    while (it.hasNext()) {
+      Entry entry = (Entry)it.next();
+      entry.accept(this);
+    }
+    currentDir = dirBackup;
 
   }
 
