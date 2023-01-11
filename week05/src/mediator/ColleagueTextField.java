@@ -1,12 +1,12 @@
 package mediator;
 
-import java.awt.Button;
+import java.awt.TextField;
 
-public class ColleagueTextField extends Button implements Colleague {
+public class ColleagueTextField extends TextField implements Colleague {
   private Mediator mediator;
 
-  public ColleagueTextField(String caption) {
-      super(caption);
+  public ColleagueTextField(String caption, int size) {
+      super(caption, size);
   }
   public void setMediator(Mediator mediator) {
     this.mediator = mediator;

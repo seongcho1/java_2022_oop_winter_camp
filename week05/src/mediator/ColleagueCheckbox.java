@@ -6,10 +6,9 @@ import java.awt.CheckboxGroup;
 public class ColleagueCheckbox extends Checkbox implements Colleague {
   private Mediator mediator;
 
-  public ColleagueCheckbox(String caption, CheckboxGroup checkboxGroup, Boolean flag) {
-      super(caption);
+  public ColleagueCheckbox(String caption, CheckboxGroup checkboxGroup, Boolean state) {
+      super(caption, state);
       this.setCheckboxGroup(checkboxGroup);
-
   }
   public void setMediator(Mediator mediator) {
     this.mediator = mediator;
