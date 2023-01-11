@@ -14,7 +14,7 @@ public class ListVisitor extends Visitor {
   public void visit(Directory directory) {
 
     System.out.println(currentDir + "/" + directory);
-
+    //and then, visitint items in the dir by accepting them in the loop
     String dirBackup = currentDir;
     currentDir = currentDir + "/" + directory.getName();
 		Iterator it = directory.iterator();
