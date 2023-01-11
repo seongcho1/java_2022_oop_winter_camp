@@ -45,7 +45,13 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 ## week04
 
-- [ ] Abstract Factory
-- [ ] Composite
-- [ ] Command
+- [x] Abstract Factory
+- [x] Composite
+- [x] Command
+
+## week05
+
+- [ ] Adapter
+- [ ] Visitor
+- [ ] Mediator
 
