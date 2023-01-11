@@ -6,11 +6,11 @@ import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.CheckboxGroup;
 
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginFrame extends Frame implements ActionListener, Mediator{
+
+public class LoginFrame extends Frame implements ActionListener,  Mediator{
 
   private ColleagueCheckbox checkGuest;
   private ColleagueCheckbox checkLogin;
@@ -56,6 +56,7 @@ public class LoginFrame extends Frame implements ActionListener, Mediator{
     textPass.setEchoChar('*');
     buttonOk = new ColleagueButton("OK");
     buttonCancel = new ColleagueButton("Cancel");
+
     // Mediator의 세트
     checkGuest.setMediator(this);
     checkLogin.setMediator(this);
@@ -63,6 +64,7 @@ public class LoginFrame extends Frame implements ActionListener, Mediator{
     textPass.setMediator(this);
     buttonOk.setMediator(this);
     buttonCancel.setMediator(this);
+
     // Listener의 세트
     checkGuest.addItemListener(checkGuest);
     checkLogin.addItemListener(checkLogin);

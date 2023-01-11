@@ -1,8 +1,10 @@
 package mediator;
 
 import java.awt.TextField;
+import java.awt.event.TextEvent;
+import java.awt.event.TextListener;
 
-public class ColleagueTextField extends TextField implements Colleague {
+public class ColleagueTextField extends TextField implements TextListener, Colleague {
   private Mediator mediator;
 
   public ColleagueTextField(String caption, int size) {
@@ -13,5 +15,11 @@ public class ColleagueTextField extends TextField implements Colleague {
   }
   public void setColleagueEnabled(boolean enabled) {
       setEnabled(enabled);
+  }
+  @Override
+  public void textValueChanged(TextEvent e) {
+    System.out.println("" + e);
+    //System.exit(0);
+
   }
 }

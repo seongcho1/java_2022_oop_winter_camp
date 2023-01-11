@@ -3,7 +3,10 @@ package mediator;
 import java.awt.Checkbox;
 import java.awt.CheckboxGroup;
 
-public class ColleagueCheckbox extends Checkbox implements Colleague {
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+public class ColleagueCheckbox extends Checkbox implements ItemListener, Colleague {
   private Mediator mediator;
 
   public ColleagueCheckbox(String caption, CheckboxGroup checkboxGroup, Boolean state) {
@@ -15,5 +18,10 @@ public class ColleagueCheckbox extends Checkbox implements Colleague {
   }
   public void setColleagueEnabled(boolean enabled) {
       setEnabled(enabled);
+  }
+  @Override
+  public void itemStateChanged(ItemEvent e) {
+    System.out.println("" + e);
+    System.exit(0);
   }
 }
