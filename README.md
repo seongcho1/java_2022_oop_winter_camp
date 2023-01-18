@@ -51,7 +51,13 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 ## week05
 
-- [ ] Adapter
-- [ ] Visitor
-- [ ] Mediator
+- [x] Adapter
+- [x] Visitor
+- [x] Mediator
+
+## week06
+
+- [ ] Proxy
+- [ ] Flyweight
+- [ ] Others...
 
