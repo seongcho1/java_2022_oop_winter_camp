@@ -8,7 +8,7 @@ public class BigCharFactory {
     private BigCharFactory()
     {
       // private constructor
-      System.out.println("default constructor");
+      //System.out.println("default constructor");
     }
 
 
@@ -34,7 +34,6 @@ public class BigCharFactory {
       }
       return i;
     }
-
 
     public BigChar getBigChar(char charAt) {
       int i;
