@@ -12,9 +12,12 @@ public class BigChar {
   public BigChar(char c) {
     this.c = c;
 
+    FileReader fr = null;
+    BufferedReader br = null;
+
     try {
-      FileReader fr = new FileReader("./data/big"+ c + ".txt");
-      BufferedReader br = new BufferedReader(fr);
+      fr = new FileReader("./data/big"+ c + ".txt");
+      br = new BufferedReader(fr);
 
       list = new ArrayList<String>();
 
@@ -23,6 +26,16 @@ public class BigChar {
         list.add(line);
       }
     } catch (IOException e) {
+    } finally {
+     try {
+      if (fr != null)
+        fr.close();
+      if (br != null)
+        br.close();
+
+     } catch (IOException e) {
+      e.printStackTrace();
+     }
     }
   }
 
