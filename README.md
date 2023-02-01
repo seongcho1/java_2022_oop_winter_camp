@@ -61,7 +61,7 @@ https://inf.run/9iX5
 
 ## week06
 
-- [ ] Proxy
-- [ ] Flyweight
-- [ ] Others...
+- [x] Proxy
+- [x] Flyweight
+- [x] Others...
 
