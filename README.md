@@ -25,6 +25,10 @@ https://www.jdoodle.com/online-java-compiler-ide/
 
 # Design Pattern With JAVA
 
+은종쌤과 자바로 디자인 패턴 쉽게 시작하기
+
+https://inf.run/9iX5
+
 ## week01
 
 - [x] Factory Method
